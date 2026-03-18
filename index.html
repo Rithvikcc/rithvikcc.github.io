@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Electron AI — The Future of Intelligence</title>
+  <meta name="description" content="Electron AI builds next-generation artificial intelligence products that power the world's most ambitious companies." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <div class="logo-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="16" r="4" fill="url(#logoGrad)"/>
+            <ellipse cx="16" cy="16" rx="14" ry="6" stroke="url(#logoGrad)" stroke-width="1.5" fill="none" transform="rotate(0 16 16)"/>
+            <ellipse cx="16" cy="16" rx="14" ry="6" stroke="url(#logoGrad)" stroke-width="1.5" fill="none" transform="rotate(60 16 16)"/>
+            <ellipse cx="16" cy="16" rx="14" ry="6" stroke="url(#logoGrad)" stroke-width="1.5" fill="none" transform="rotate(120 16 16)"/>
+            <defs>
+              <linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32">
+                <stop offset="0%" stop-color="#00d4ff"/>
+                <stop offset="100%" stop-color="#a855f7"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="logo-text">Electron <span class="logo-accent">AI</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#solutions">Solutions</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#contact" class="btn-nav">Get Early Access</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#solutions">Solutions</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="btn-nav-mobile">Get Early Access</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-bg-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Introducing Electron AI — Now in Beta
+      </div>
+      <h1 class="hero-title">
+        Intelligence<br/>
+        <span class="gradient-text">Reimagined</span><br/>
+        for Everything
+      </h1>
+      <p class="hero-subtitle">
+        We build AI that doesn't just assist — it transforms. Electron AI powers the next generation of products, pipelines, and possibilities.
+      </p>
+      <div class="hero-actions">
+        <a href="#products" class="btn-primary">
+          <span>Explore Products</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#about" class="btn-secondary">Learn Our Story</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" data-target="500">0</span><span class="stat-suffix">M+</span>
+          <span class="stat-label">API Requests Daily</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="99">0</span><span class="stat-suffix">.9%</span>
+          <span class="stat-label">Uptime SLA</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="150">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Enterprise Partners</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-indicator">
+        <div class="scroll-dot"></div>
+      </div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-label">Who We Are</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Building the AI layer<br/>the world runs on</h2>
+          <p class="about-desc">
+            Electron AI was founded with a singular vision: to make powerful artificial intelligence accessible, responsible, and transformative for every company — from startups to the Fortune 500.
+          </p>
+          <p class="about-desc">
+            We combine cutting-edge research with production-grade infrastructure, delivering AI that you can actually ship.
+          </p>
+          <a href="#contact" class="btn-outline">Join Our Journey</a>
+        </div>
+        <div class="about-visual">
+          <div class="about-card-grid">
+            <div class="about-card" style="--delay: 0s">
+              <div class="about-card-icon">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 3l2.5 7.5H24l-6.5 4.7 2.5 7.5L14 18l-6 4.7 2.5-7.5L4 10.5h7.5L14 3z" stroke="url(#g1)" stroke-width="1.5" fill="none" stroke-linejoin="round"/><defs><linearGradient id="g1" x1="4" y1="3" x2="24" y2="22"><stop stop-color="#00d4ff"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs></svg>
+              </div>
+              <h3>Research-First</h3>
+              <p>Grounded in state-of-the-art ML research published at top venues.</p>
+            </div>
+            <div class="about-card" style="--delay: 0.1s">
+              <div class="about-card-icon">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="4" width="8" height="8" rx="2" stroke="url(#g2)" stroke-width="1.5"/><rect x="16" y="4" width="8" height="8" rx="2" stroke="url(#g2)" stroke-width="1.5"/><rect x="4" y="16" width="8" height="8" rx="2" stroke="url(#g2)" stroke-width="1.5"/><rect x="16" y="16" width="8" height="8" rx="2" stroke="url(#g2)" stroke-width="1.5"/><defs><linearGradient id="g2" x1="4" y1="4" x2="24" y2="24"><stop stop-color="#00d4ff"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs></svg>
+              </div>
+              <h3>Modular Platform</h3>
+              <p>Plug AI into any stack with our flexible, composable API suite.</p>
+            </div>
+            <div class="about-card" style="--delay: 0.2s">
+              <div class="about-card-icon">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4C8.48 4 4 8.48 4 14s4.48 10 10 10 10-4.48 10-10S19.52 4 14 4z" stroke="url(#g3)" stroke-width="1.5" fill="none"/><path d="M14 9v5l3 3" stroke="url(#g3)" stroke-width="1.5" stroke-linecap="round"/><defs><linearGradient id="g3" x1="4" y1="4" x2="24" y2="24"><stop stop-color="#00d4ff"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs></svg>
+              </div>
+              <h3>Always On</h3>
+              <p>Enterprise-grade reliability with 99.9% uptime guarantees.</p>
+            </div>
+            <div class="about-card" style="--delay: 0.3s">
+              <div class="about-card-icon">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4l2 6h6l-5 3.6 1.9 5.9L14 16l-4.9 3.5L11 13.6 6 10h6L14 4z" stroke="url(#g4)" stroke-width="1.5" fill="none" stroke-linejoin="round"/><defs><linearGradient id="g4" x1="6" y1="4" x2="22" y2="24"><stop stop-color="#00d4ff"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs></svg>
+              </div>
+              <h3>Safety by Design</h3>
+              <p>Responsible AI built with transparency, alignment, and trust at the core.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-label">Our Products</div>
+      <h2 class="section-title centered">AI tools built for<br/>the real world</h2>
+      <p class="section-subtitle centered">A growing suite of intelligent products designed to supercharge how teams think, build, and operate.</p>
+
+      <div class="products-grid">
+
+        <div class="product-card product-featured">
+          <div class="product-card-bg"></div>
+          <div class="product-tag">Flagship</div>
+          <div class="product-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="6" fill="url(#pg1)"/>
+              <ellipse cx="20" cy="20" rx="17" ry="7" stroke="url(#pg1)" stroke-width="1.5" fill="none"/>
+              <ellipse cx="20" cy="20" rx="17" ry="7" stroke="url(#pg1)" stroke-width="1.5" fill="none" transform="rotate(60 20 20)"/>
+              <ellipse cx="20" cy="20" rx="17" ry="7" stroke="url(#pg1)" stroke-width="1.5" fill="none" transform="rotate(120 20 20)"/>
+              <defs><linearGradient id="pg1" x1="3" y1="3" x2="37" y2="37"><stop stop-color="#00d4ff"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3 class="product-name">Electron Core</h3>
+          <p class="product-desc">Our foundational large language model — fast, accurate, and deeply capable across every domain. The engine behind everything we build.</p>
+          <div class="product-features">
+            <span>200B Parameters</span>
+            <span>Multimodal</span>
+            <span>Real-time</span>
+          </div>
+          <a href="#contact" class="product-link">
+            Join Waitlist <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <div class="product-card">
+          <div class="product-tag">Coming Soon</div>
+          <div class="product-icon product-icon-sm">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <rect x="4" y="8" width="24" height="16" rx="3" stroke="url(#pg2)" stroke-width="1.5" fill="none"/>
+              <path d="M10 14h12M10 18h8" stroke="url(#pg2)" stroke-width="1.5" stroke-linecap="round"/>
+              <defs><linearGradient id="pg2" x1="4" y1="8" x2="28" y2="24"><stop stop-color="#00d4ff"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3 class="product-name">Electron Chat</h3>
+          <p class="product-desc">A next-generation conversational AI platform for teams. Think smarter, collaborate faster, and never lose context again.</p>
+          <div class="product-features">
+            <span>Team Workspaces</span>
+            <span>Memory</span>
+          </div>
+          <a href="#contact" class="product-link">
+            Learn More <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <div class="product-card">
+          <div class="product-tag">Coming Soon</div>
+          <div class="product-icon product-icon-sm">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M8 6h16M8 12h10M8 18h13M8 24h8" stroke="url(#pg3)" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="26" cy="22" r="4" stroke="url(#pg3)" stroke-width="1.5" fill="none"/>
+              <path d="M24.5 22l1 1 2-2" stroke="url(#pg3)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs><linearGradient id="pg3" x1="6" y1="6" x2="28" y2="28"><stop stop-color="#00d4ff"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3 class="product-name">Electron Docs</h3>
+          <p class="product-desc">Intelligent document understanding and generation. Extract, summarize, and act on information at enterprise scale.</p>
+          <div class="product-features">
+            <span>PDF & OCR</span>
+            <span>Auto-Summary</span>
+          </div>
+          <a href="#contact" class="product-link">
+            Learn More <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <div class="product-card">
+          <div class="product-tag">Coming Soon</div>
+          <div class="product-icon product-icon-sm">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M6 16c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10" stroke="url(#pg4)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <path d="M16 10v6l4 2" stroke="url(#pg4)" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M6 22l3-2M6 26l6-4" stroke="url(#pg4)" stroke-width="1.5" stroke-linecap="round"/>
+              <defs><linearGradient id="pg4" x1="6" y1="6" x2="26" y2="26"><stop stop-color="#00d4ff"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3 class="product-name">Electron Agent</h3>
+          <p class="product-desc">Autonomous AI agents that plan, reason, and execute complex multi-step workflows — so you can focus on what matters.</p>
+          <div class="product-features">
+            <span>Agentic</span>
+            <span>Tool Use</span>
+          </div>
+          <a href="#contact" class="product-link">
+            Learn More <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <div class="product-card product-api">
+          <div class="product-tag product-tag-api">Developer</div>
+          <div class="product-icon product-icon-sm">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M10 10l-4 6 4 6M22 10l4 6-4 6M17 8l-3 16" stroke="url(#pg5)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs><linearGradient id="pg5" x1="6" y1="8" x2="26" y2="24"><stop stop-color="#00d4ff"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3 class="product-name">Electron API</h3>
+          <p class="product-desc">Full programmatic access to all Electron AI models and capabilities. Build anything with our REST and streaming APIs.</p>
+          <div class="product-features">
+            <span>REST & WebSocket</span>
+            <span>SDKs</span>
+            <span>Webhooks</span>
+          </div>
+          <a href="#contact" class="product-link">
+            View Docs <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions Section -->
+  <section class="solutions" id="solutions">
+    <div class="container">
+      <div class="section-label">Solutions</div>
+      <h2 class="section-title centered">Designed for every<br/>kind of builder</h2>
+      <div class="solutions-grid">
+        <div class="solution-item">
+          <div class="solution-number">01</div>
+          <div class="solution-content">
+            <h3>Enterprise</h3>
+            <p>Custom models, dedicated infrastructure, and enterprise SLAs. Compliant with SOC2, HIPAA, and GDPR out of the box.</p>
+          </div>
+        </div>
+        <div class="solution-item">
+          <div class="solution-number">02</div>
+          <div class="solution-content">
+            <h3>Startups</h3>
+            <p>Generous free tiers and startup credits to help you move fast. Our team is here to help you ship your first AI feature.</p>
+          </div>
+        </div>
+        <div class="solution-item">
+          <div class="solution-number">03</div>
+          <div class="solution-content">
+            <h3>Developers</h3>
+            <p>Best-in-class developer experience with comprehensive SDKs, detailed docs, and an active community forum.</p>
+          </div>
+        </div>
+        <div class="solution-item">
+          <div class="solution-number">04</div>
+          <div class="solution-content">
+            <h3>Research</h3>
+            <p>Academic access programs and research partnerships for universities and independent AI researchers pushing the frontier.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research / Tech Section -->
+  <section class="research" id="research">
+    <div class="container">
+      <div class="research-inner">
+        <div class="research-left">
+          <div class="section-label">Our Research</div>
+          <h2 class="section-title">Frontier research.<br/>Real-world impact.</h2>
+          <p class="research-desc">Our research team is at the forefront of foundation model development, alignment, and interpretability. We publish openly and work to raise the bar for the entire field.</p>
+          <div class="research-topics">
+            <div class="topic-pill">Large Language Models</div>
+            <div class="topic-pill">Multimodal AI</div>
+            <div class="topic-pill">AI Alignment</div>
+            <div class="topic-pill">Agentic Systems</div>
+            <div class="topic-pill">Efficient Inference</div>
+            <div class="topic-pill">Interpretability</div>
+          </div>
+          <a href="#contact" class="btn-outline">Read Our Papers</a>
+        </div>
+        <div class="research-right">
+          <div class="research-visual">
+            <div class="orbit-system">
+              <div class="orbit-center">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                  <circle cx="24" cy="24" r="8" fill="url(#oc1)"/>
+                  <defs><linearGradient id="oc1" x1="16" y1="16" x2="32" y2="32"><stop stop-color="#00d4ff"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
+                </svg>
+              </div>
+              <div class="orbit orbit-1">
+                <div class="orbit-dot"></div>
+              </div>
+              <div class="orbit orbit-2">
+                <div class="orbit-dot orbit-dot-2"></div>
+              </div>
+              <div class="orbit orbit-3">
+                <div class="orbit-dot orbit-dot-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials / Trust Section -->
+  <section class="trust">
+    <div class="container">
+      <h2 class="section-title centered">Trusted by teams<br/>moving at the speed of AI</h2>
+      <div class="trust-logos">
+        <div class="trust-logo-item">Series A Startup</div>
+        <div class="trust-logo-item">Fortune 500</div>
+        <div class="trust-logo-item">University Labs</div>
+        <div class="trust-logo-item">Gov Agencies</div>
+        <div class="trust-logo-item">Scale-ups</div>
+        <div class="trust-logo-item">Dev Teams</div>
+      </div>
+      <div class="testimonials">
+        <div class="testimonial">
+          <div class="testimonial-quote">"Electron AI cut our model development cycle in half. The API is incredibly clean and the latency is best-in-class."</div>
+          <div class="testimonial-author">
+            <div class="author-avatar">JK</div>
+            <div>
+              <div class="author-name">Jordan Kim</div>
+              <div class="author-role">CTO, NeuralStack</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-quote">"We evaluated every major AI platform. Electron AI was the only one that met our security requirements while still being fast enough for production."</div>
+          <div class="testimonial-author">
+            <div class="author-avatar">SR</div>
+            <div>
+              <div class="author-name">Sarah Reyes</div>
+              <div class="author-role">VP Engineering, DataVault</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-quote">"The reasoning quality is exceptional. Electron Core handles complex analysis tasks that used to require a team of analysts."</div>
+          <div class="testimonial-author">
+            <div class="author-avatar">ML</div>
+            <div>
+              <div class="author-name">Marcus Lee</div>
+              <div class="author-role">Head of AI, Orbital Finance</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Contact Section -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="cta-bg-orb"></div>
+        <div class="section-label">Get Started</div>
+        <h2 class="cta-title">Ready to build with<br/>Electron AI?</h2>
+        <p class="cta-subtitle">Join thousands of builders on the waitlist and be first to access the future of intelligence.</p>
+        <form class="cta-form" id="ctaForm">
+          <div class="form-row">
+            <input type="text" placeholder="Your name" required class="form-input" />
+            <input type="email" placeholder="Work email" required class="form-input" />
+          </div>
+          <div class="form-row">
+            <select class="form-input form-select">
+              <option value="" disabled selected>I'm interested in...</option>
+              <option>Electron Core (LLM API)</option>
+              <option>Electron Chat</option>
+              <option>Electron Docs</option>
+              <option>Electron Agent</option>
+              <option>Enterprise Plan</option>
+            </select>
+            <input type="text" placeholder="Company (optional)" class="form-input" />
+          </div>
+          <button type="submit" class="btn-submit">
+            <span>Request Early Access</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+        <div class="cta-note">No credit card required. We'll reach out within 48 hours.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <div class="logo-icon">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+                <circle cx="16" cy="16" r="4" fill="url(#fLogoGrad)"/>
+                <ellipse cx="16" cy="16" rx="14" ry="6" stroke="url(#fLogoGrad)" stroke-width="1.5" fill="none"/>
+                <ellipse cx="16" cy="16" rx="14" ry="6" stroke="url(#fLogoGrad)" stroke-width="1.5" fill="none" transform="rotate(60 16 16)"/>
+                <ellipse cx="16" cy="16" rx="14" ry="6" stroke="url(#fLogoGrad)" stroke-width="1.5" fill="none" transform="rotate(120 16 16)"/>
+                <defs><linearGradient id="fLogoGrad" x1="0" y1="0" x2="32" y2="32"><stop offset="0%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#a855f7"/></linearGradient></defs>
+              </svg>
+            </div>
+            <span class="logo-text">Electron <span class="logo-accent">AI</span></span>
+          </a>
+          <p class="footer-tagline">Intelligence reimagined for everything.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Twitter/X">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Products</h4>
+            <ul>
+              <li><a href="#products">Electron Core</a></li>
+              <li><a href="#products">Electron Chat</a></li>
+              <li><a href="#products">Electron Docs</a></li>
+              <li><a href="#products">Electron Agent</a></li>
+              <li><a href="#products">Electron API</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#research">Research</a></li>
+              <li><a href="#contact">Careers</a></li>
+              <li><a href="#contact">Press</a></li>
+              <li><a href="#contact">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Solutions</h4>
+            <ul>
+              <li><a href="#solutions">Enterprise</a></li>
+              <li><a href="#solutions">Startups</a></li>
+              <li><a href="#solutions">Developers</a></li>
+              <li><a href="#solutions">Research</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">Security</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Electron AI, Inc. All rights reserved.</span>
+        <span class="footer-bottom-right">Built with intelligence.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
